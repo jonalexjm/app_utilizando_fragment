@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jonalexjm.com.appcontactosbasedatos.DetalleContacto"
+    android:orientation="vertical">
+
+    <include android:id="@+id/miActionBar"
+        layout="@layout/actionbar"
+
+        ></include>
+
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre"
+        android:textSize="@dimen/nombre_contacto"
+
+        />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:onClick="llamar">
+
+        <ImageView
+            android:id="@+id/imgvTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/telefonoicono"/>
+        <TextView
+            android:id="@+id/tvTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/telefono"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/telefono_contacto"
+            android:layout_marginLeft="@dimen/left"
+            />
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:onClick="enviarMail">
+
+        <ImageView
+            android:id="@+id/imgvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/address_book_50"/>
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/email"
+            android:layout_marginLeft="@dimen/left"
+            />
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</LinearLayout>

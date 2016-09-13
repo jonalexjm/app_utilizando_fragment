@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">appContactosBaseDatos</string>
+    <string name="nombre">John Alexander Jimenez</string>
+    <string name="telefono">678</string>
+    <string name="email">jonalexjm@hotmail.com</string>
+    <string name="pnombre">nombre</string>
+    <string name="ptelefono">telefono</string>
+    <string name="pemail">email</string>
+    <string name="search">Buscar</string>
+    <string name="settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
